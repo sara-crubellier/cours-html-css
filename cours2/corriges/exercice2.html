@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Dresseur de pokémons</title>
+        <!-- Pour corriger les accents -->
+        <meta charset="utf-8" />        
+    </head>
+<body>
+    <h1>Dresseur de pokémons</h1>
+    <p>Les champs marqués d'une astérisque sont obligatoires.</p>
+    <form>
+        <fieldset>
+            <legend>Nouveau dresseur</legend>
+            
+            <label for="nom">Nom *</label><br/>
+            <input type="text" id="nom" name="nom" required /><br/><br/>
+            
+            <label for="description">Description</label><br />
+            <textarea id="description" rows="5" name="description"></textarea>
+        
+            <h2>Équipe</h2>
+            <input type="radio" id="rouge" name="equipe" value="Rouge" />
+            <label for="rouge">Rouge</label><br/>
+            <input type="radio" id="jaune" name="equipe" value="Jaune" />
+            <label for="jaune">Jaune</label><br/>
+            <input type="radio" id="bleue" name="equipe" value="Bleu" />
+            <label for="bleue">Bleue</label><br/><br/>
+
+            <label for="anniversaire">Anniversaire *</label><br/>
+            <input type="date" id="anniversaire" name="anniversaire" required /><br/><br/>
+
+            <button>Envoyer</button>
+        </fieldset>
+    </form>
+</body>
+

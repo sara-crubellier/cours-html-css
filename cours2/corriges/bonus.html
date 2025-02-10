@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Paiement en ligne</title>
+		<!-- Pour corriger les accents -->
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	   <h1>Paiement en ligne</h1>
+	   <form>
+			<fieldset>
+		        <legend>Identité</legend>
+				<label for="prenom">Prénom</label>
+				<input type="text" id="prenom" name="prenom" /><br /><br />
+
+				<label for="nom">Nom</label>
+				<input type="text" id="nom" name="nom" /><br /><br />
+
+				<label for="email">Email</label>
+				<input type="text" id="email" name="email" />
+			</fieldset>
+
+			<br /><br />
+
+			<fieldset>
+				<legend>Adresse</legend>
+
+				<label for="addr">Adresse</label>
+				<input type="text" id="addr" name="addr" /><br /><br />
+
+				<label for="addrcp">Code postal</label>
+				<input type="text" id="addrcp" name="addrcp" /><br /><br />
+
+				<label for="addrville">Ville</label>
+				<input type="text" id="addrville" name="addrville" />
+			</fieldset>
+
+			<br /><br />
+
+			<fieldset>
+				<legend>Informations de paiement</legend>
+		
+				<fieldset>
+					<legend>Type de paiement</legend>
+				
+					<input type="radio" id="gateway-mastercard" name="gateway" value="mastercard" />
+					<label for="gateway-mastercard">
+						<img src="mastercard.png" alt="" />
+						Mastercard
+					</label><br /><br />
+
+					<input type="radio" id="gateway-visa" name="gateway" value="visa" />
+					<label for="gateway-visa">
+						<img src="visa.png" alt="" />
+						Visa
+					</label>
+				</fieldset>
+
+				<br /><br />
+
+				<fieldset>
+					<legend>Carte bancaire</legend>
+
+					<label for="cbnum">Numéro de carte</label>
+					<input type="text" id="cbnum" name="cbnum" /><br /><br />
+
+					<label for="cbname">Nom du porteur</label>
+					<input type="text" id="cbname" name="cbname" /><br /><br />
+
+					<label for="cbcode">Code de sécurité</label>
+					<input type="text" id="cbcode" name="cbcode" />
+				</fieldset>
+			</fieldset>
+
+			<br /><br />
+
+			<fieldset>
+				<legend>Confirmation</legend>
+				
+				<input type="checkbox" id="cgv" name="cgv">
+				<label for="cgv">
+					J'accepte les <a href="" target="_blank">CGV</a>
+				</label>
+			</fieldset>
+
+			<br /><br />
+
+			<button>Envoyer</button>
+		</form>
+	</body>
+</html>

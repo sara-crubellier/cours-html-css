@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Les formulaires</title>
+		<!-- Pour corriger les accents -->
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<h1>Les formulaires</h1>
+
+		<!-- Echauffement 1 : ajouter au formulaire une liste déroulante avec 3 pays de votre choix -->
+		<h2>Choisissez un pays</h2>
+		<form>
+			<select name="pays">
+				<option value="france">France</option>
+				<option value="espagne">Espagne</option>
+				<option value="italie">Italie</option>
+			</select>
+		</form>
+
+		<!-- Echauffement 2 : ajouter un champ prenom, puis rendre les deux champs obligatoires -->
+		<h2>Qui suis-je ?</h2>
+		<form>
+		   <label for="nom">Nom</label>
+		   <input type="text" id="nom" name="nom" required />
+
+		   <label for="prenom">Prénom</label>
+		   <input type="text" id="prenom" name="prenom" required />
+		</form>
+
+		<!-- Echauffement 3 : corriger les types des champs pour réfleter la nature des données attendues -->
+		<!-- Echauffement 4 : ajouter un bouton pour soumettre le formulaire -->
+		<h2>Se connecter</h2>
+		<form>
+		   <label for="email">E-mail</label>
+		   <input type="email" id="email" name="email" />
+
+		   <label for="motdepasse">Mot de passe</label>
+		   <input type="password" id="motdepasse" name="mondepasse" />
+
+		   <button>Soumettre le formulaire</button>
+		</form>
+
+		<!-- Echauffement 5 : mettre le texte des libellés de chaque radio button dans une balise label, et associer cette balise au champ input lui correspondant -->
+		<!-- Echauffement 6 : regrouper les radio buttons de deux manières : sémantique et programmatique -->
+		<h1>Mon pokémon préféré</h1>
+		<form>
+			<fieldset>
+			   <input id="pikachu" name="pokemons" type="radio" value="Pikachu" />
+			   <label for="pikachu">Pikachu</label>
+
+			   <input id="carapuce" name="pokemons" type="radio" value="Carapuce" />
+			   <label for="carapuce">Carapuce</label>
+
+			   <input id="bulbizarre" name="pokemons" type="radio" value="Bulbizarre" />
+			   <label for="bulbizarre">Bulbizarre</label>
+
+			   <input id="dracaufeu" name="pokemons" type="radio" value="Dracaufeu" />
+			   <label for="dracaufeu">Dracaufeu</label>
+			</fieldset>
+		</form>
+	</body>
+</html>	

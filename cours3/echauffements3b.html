@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Styler en CSS</title>
+		<!-- Pour corriger les accents -->
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<!--
+		Echauffement 3 :
+		Ajouter une feuille de style externe
+		 -->
+
+		<!-- 
+		Echauffement 4 :
+		Dans cette feuille de style externe :
+		- Le document doit être écrit en Helvetica.
+		- les titres de niveau 1 doivent être écrits en rouge.
+		- tous les titres de niveau 2 doivent soulignés.
+		- les titres de niveau 2 dans les sections doivent être verts.
+		- les titres 2 de niveau dans les articles doivent être bleus.
+		- les paragraphes suivant directement un titre de niveau 2 doivent être en rouge italique.
+		- les paragraphes suivant un titre de niveau 1 doivent être en violet.
+		-->
+
+		<section>
+			<h1>Mon titre 1</h1>
+			<article>
+				<h2>Mon Titre 2</h2>
+				<p>Premier paragraphe</p>
+				<p class="une-classe">Deuxième paragraphe</p>
+				<p>Troisième paragraphe</p>
+				<p id="unId">Quatrième paragraphe</p>
+			</article>
+			<article>
+				<h2 class="uneclasse">Mon Titre 3</h2>
+				<p id="unAutreId" class="une-classe">Cinquième paragraphe</p>
+				<p>Sixième paragraphe</p>
+			</article>
+		</section>
+
+		<!--
+		Toujours dans le fichier externe :
+	    - mettre une bordure et une marge interne sur chaque case du tableau.
+    	- colorier le fond des lignes impaires du tableau
+    		-> utiliser cette pseudo-classe : 
+    		   https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child
+    	- colorier le texte de la dernière ligne du tableau
+    		-> utiliser cette pseudo-classe : 
+    		   https://developer.mozilla.org/fr/docs/Web/CSS/:nth-last-child
+		-->
+
+
+		<table>
+			<tr>
+				<td>Ligne 1 - Colonne 1</td>
+				<td>Ligne 1 - Colonne 2</td>
+				<td>Ligne 1 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 2 - Colonne 1</td>
+				<td>Ligne 2 - Colonne 2</td>
+				<td>Ligne 2 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 3 - Colonne 1</td>
+				<td>Ligne 3 - Colonne 2</td>
+				<td>Ligne 3 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 4 - Colonne 1</td>
+				<td>Ligne 4 - Colonne 2</td>
+				<td>Ligne 4 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 5 - Colonne 1</td>
+				<td>Ligne 5 - Colonne 2</td>
+				<td>Ligne 5 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 6 - Colonne 1</td>
+				<td>Ligne 6 - Colonne 2</td>
+				<td>Ligne 6 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 7 - Colonne 1</td>
+				<td>Ligne 7 - Colonne 2</td>
+				<td>Ligne 7 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 8 - Colonne 1</td>
+				<td>Ligne 8 - Colonne 2</td>
+				<td>Ligne 8 - Colonne 3</td>
+			</tr>
+			<tr>
+				<td>Ligne 9 - Colonne 1</td>
+				<td>Ligne 9 - Colonne 2</td>
+				<td>Ligne 9 - Colonne 3</td>
+			</tr>
+		</table>
+	</body>
+</html>	
