@@ -1,0 +1,32 @@
+body {
+    font-size: "Helvetica", sans-serif;
+}
+h1 { 
+    color: red;
+}
+h2 {
+    color: green;
+    text-decoration: underline;
+}
+
+article h2 {
+    color: blue;
+}
+h2 + p {
+    color: red!important;
+    font-style: italic;
+}
+h1 ~ p {
+    color: violet;
+}
+
+td {
+    border: 2px dashed darkorchid;
+    padding: 10px;
+}
+tr:nth-child(odd) {
+    background-color: lightpink;
+}
+tr:last-child {
+    color: darkred;
+}
