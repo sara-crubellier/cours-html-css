@@ -5,7 +5,36 @@
 	<title>Styler en CSS</title>
 	<!-- Pour corriger les accents -->
 	<meta charset="utf-8" />
-	<style></style>
+	<style>
+		p {
+			color: darkred;
+			font-size: 16px;
+		}
+
+		.une-classe {
+			background-color: lightpink;
+			padding: 10px;
+		}
+
+		#unId {
+			border: 3px solid purple;
+			margin: 10px;
+			padding: 10px;
+		}
+
+		section {
+			margin: 100px;
+		}
+
+		h1 {
+			font-size: 32px;
+			font-variant: small-caps;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+	</style>
 </head>
 
 <body>
@@ -35,7 +64,7 @@
 			<p id="unId">Quatrième paragraphe</p>
 		</article>
 		<article>
-			<h2 class="uneclasse">Mon Titre 3</h2>
+			<h2 class="une-classe">Mon Titre 3</h2>
 			<p id="unAutreId" class="une-classe">Cinquième paragraphe</p>
 			<p>Sixième paragraphe</p>
 		</article>
